@@ -1,0 +1,25 @@
+{
+  "name": "practice-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PanSerg/practice-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PanSerg/practice-node/issues"
+  },
+  "homepage": "https://github.com/PanSerg/practice-node#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

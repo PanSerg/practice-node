@@ -1,5 +1,4 @@
-const yargs = require("yargs");
-const { hideBin } = require("yargs/helpers");
+const { program } = require("commander");
 
 const movieService = require("./movies");
 
@@ -25,9 +24,14 @@ const invorkeAction = async ({action, id, title, director}) => {
     }
 }
 
-const arr = hideBin(process.argv);
-console.log(arr);
+program
+    .option("-a, --action <type>")
+    .option("-i, --id <type>")
+    .option("-t, --title <type>")
+    .option("-d, --director <type>");
 
-const { argv } = yargs(arr);
-invorkeAction(argv);
+program.parse();
 
+const options = program.opts();
+console.log(options);
+invorkeAction(options);
